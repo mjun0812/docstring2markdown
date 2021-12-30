@@ -1,6 +1,6 @@
 # API
 
-Update: 2021-12-31 00:43
+Update: 2021-12-31 01:08
 
 ## <kbd>module</kbd> parser
 
@@ -10,11 +10,11 @@ Update: 2021-12-31 00:43
 generate_markdown(path)
 ```
 
-generate markdown from package in path
+generate markdown from package dir path
 
 #### Args:
 
-- *`path`*: str
+ - <b>`path`</b> (str):  package root dir path
 
 ### <kbd>function</kbd> `parser.validate_output`
 
@@ -24,11 +24,11 @@ validate_output(output)
 
 markdown validator
 
-ex. fix number of new line, period newline
+fix number of new line and period newline.
 
 #### Args:
 
-- *`output`*: str
+ - <b>`output`</b> (str):  input markdown text
 
 #### Returns:
 
@@ -44,7 +44,7 @@ get docstring from module
 
 #### Args:
 
-- *`module`*: obj
+ - <b>`module`</b> (obj):  module had docstring or not
 
 #### Returns:
 
@@ -60,7 +60,7 @@ parse google format docstring to markdown
 
 #### Args:
 
-- *`docstring`*: str
+ - <b>`docstring`</b> (str):  google format docstring
 
 #### Returns:
 
@@ -76,8 +76,8 @@ get markdown from function docstring
 
 #### Args:
 
-- *`func`*: obj
-- *`clsname`*: str, optional
+ - <b>`func`</b> (obj):  function
+ - <b>`clsname`</b> (str, optional):  if you input class method, this variable is class name. Defaults to "".
 
 #### Returns:
 
@@ -105,7 +105,7 @@ get markdown from module
 
 #### Args:
 
-- *`module`*: obj
+ - <b>`module`</b> (obj):  module
 
 #### Returns:
 

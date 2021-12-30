@@ -174,7 +174,9 @@ def docstring_to_markdown(docstring):
         elif indent_depth > block_indent:
             if args and not literal_block:
                 if _TYPED_ARGSTART.match(row):
-                    markdown_output.append("\n" + " " * block_indent + "- " + _TYPED_ARGSTART.sub(r"*`\1`*: \2", row))
+                    markdown_output.append(
+                        "\n" + " " * block_indent + " - " + _TYPED_ARGSTART.sub(r"<b>`\1`</b> (\2): \3", row)
+                    )
                 elif _ARGSTART.match(row):
                     markdown_output.append("\n" + " " * block_indent + "- " + _ARGSTART.sub(r"*`\1`*: \2", row))
                 arg_indent = indent_depth
