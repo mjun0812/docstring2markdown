@@ -22,6 +22,8 @@ optional arguments:
 
 output markdown example is here -> [documantation](./docs/doc.md)
 
+<!-- doc-to-md -->
+
 ## References
 
 [ml-tooling/lazydocs](https://github.com/ml-tooling/lazydocs)
