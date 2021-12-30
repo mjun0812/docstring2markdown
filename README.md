@@ -1,6 +1,6 @@
 # docstring2markdown
 
-`docstring2markdown` is markdown generetor from Python docstring(google format).
+`docstring2markdown` is markdown generetor from Python google styled docstring.
 
 ## Install
 

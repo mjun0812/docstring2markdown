@@ -44,7 +44,7 @@ _CLASS_TEMPLATE = """
 
 
 def generate_markdown(path):
-    """generate markdown from package in path
+    """generate markdown from package dir path
 
     Args:
         path (str): package root dir path
@@ -94,7 +94,7 @@ def _is_module_ignored(module_name, ignored_modules) -> bool:
 def validate_output(output):
     """markdown validator
 
-    ex. fix number of new line, period newline
+    fix number of new line and period newline.
 
     Args:
         output (str): input markdown text
